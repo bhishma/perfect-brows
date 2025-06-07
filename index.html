@@ -1,0 +1,874 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfect Eyebrows & Beauty Salon</title>
+    <meta name="description"
+        content="Perfect Eyebrows offers professional eyebrow threading, facials, waxing, and henna in Durham, NC. Book your appointment today!">
+    <meta name="keywords"
+        content="eyebrow threading, facial treatments, waxing, henna designs, beauty salon Durham, Glow Brows and Beauty, spa Durham">
+    <meta name="author" content="Perfect Eyebrows & Beauty Salon">
+    <meta property="og:title" content="Perfect Eyebrows – Eyebrow Threading & Beauty Salon">
+    <meta property="og:description"
+        content="Expert threading, facials, waxing, and henna. Visit our top-rated beauty salon in Durham.">
+    <meta property="og:image" content="https://perfectbrowsworld.com/preview.jpg">
+    <meta property="og:url" content="https://perfectbrowsworld.com">
+
+    <title>Perfect Eyebrows | Threading &amp; Beauty Salon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="static/styles.css">
+
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-[#ff85a2] flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-2" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                Perfect Eyebrows
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link text-gray-700 hover:text-[#ff85a2]">Home</a>
+                <a href="#services" class="nav-link text-gray-700 hover:text-[#ff85a2]">Services</a>
+                <a href="#pricing" class="nav-link text-gray-700 hover:text-[#ff85a2]">Pricing</a>
+                <a href="#reviews" class="nav-link text-gray-700 hover:text-[#ff85a2]">Reviews</a>
+                <a href="#contact" class="nav-link text-gray-700 hover:text-[#ff85a2]">Contact</a>
+            </div>
+            <button class="md:hidden text-gray-700 focus:outline-none" id="menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white w-full py-3 px-4 shadow-md" id="mobile-menu">
+            <div class="flex flex-col space-y-3">
+                <a href="#home" class="text-gray-700 hover:text-[#ff85a2]">Home</a>
+                <a href="#services" class="text-gray-700 hover:text-[#ff85a2]">Services</a>
+                <a href="#pricing" class="text-gray-700 hover:text-[#ff85a2]">Pricing</a>
+                <a href="#reviews" class="text-gray-700 hover:text-[#ff85a2]">Reviews</a>
+                <a href="#contact" class="text-gray-700 hover:text-[#ff85a2]">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section id="home" class="relative">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-slide active"
+                    style="background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'1200\' height=\'600\' viewBox=\'0 0 1200 600\'%3E%3Crect width=\'1200\' height=\'600\' fill=\'%23ffd1dc\'/%3E%3Cpath d=\'M0,300 Q300,200 600,300 T1200,300\' stroke=\'%23ffb6c1\' stroke-width=\'8\' fill=\'none\'/%3E%3Cpath d=\'M0,350 Q300,250 600,350 T1200,350\' stroke=\'%23ffb6c1\' stroke-width=\'6\' fill=\'none\'/%3E%3Cpath d=\'M0,250 Q300,150 600,250 T1200,250\' stroke=\'%23ffb6c1\' stroke-width=\'6\' fill=\'none\'/%3E%3Ccircle cx=\'900\' cy=\'200\' r=\'80\' fill=\'%23ffb6c1\' opacity=\'0.6\'/%3E%3Ccircle cx=\'300\' cy=\'400\' r=\'60\' fill=\'%23ffb6c1\' opacity=\'0.6\'/%3E%3C/svg%3E');">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-content">
+                        <h1 class="text-4xl md:text-6xl font-bold mb-4">Perfect Eyebrows</h1>
+                        <p class="text-xl md:text-2xl mb-8">Enhance your natural beauty with our expert threading and
+                            beauty services</p>
+                        <div class="flex justify-center gap-4">
+                            <a href="#services"
+                                class="btn-primary px-6 py-3 rounded-full text-white font-medium hover:shadow-lg">Our
+                                Services</a>
+                            <a href="#contact"
+                                class="bg-white px-6 py-3 rounded-full text-[#ff85a2] font-medium hover:bg-gray-100 hover:shadow-lg transition duration-300">Book
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-slide"
+                    style="background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'1200\' height=\'600\' viewBox=\'0 0 1200 600\'%3E%3Crect width=\'1200\' height=\'600\' fill=\'%23ffb6c1\'/%3E%3Ccircle cx=\'600\' cy=\'300\' r=\'200\' fill=\'%23ffd1dc\'/%3E%3Ccircle cx=\'600\' cy=\'300\' r=\'150\' fill=\'%23ffb6c1\'/%3E%3Ccircle cx=\'600\' cy=\'300\' r=\'100\' fill=\'%23ffd1dc\'/%3E%3Ccircle cx=\'600\' cy=\'300\' r=\'50\' fill=\'%23ffb6c1\'/%3E%3C/svg%3E');">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-content">
+                        <h1 class="text-4xl md:text-6xl font-bold mb-4">Expert Eyebrow Threading</h1>
+                        <p class="text-xl md:text-2xl mb-8">Perfectly shaped brows that enhance your natural beauty</p>
+                        <div class="flex justify-center gap-4">
+                            <a href="#pricing"
+                                class="btn-primary px-6 py-3 rounded-full text-white font-medium hover:shadow-lg">View
+                                Pricing</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-slide"
+                    style="background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'1200\' height=\'600\' viewBox=\'0 0 1200 600\'%3E%3Crect width=\'1200\' height=\'600\' fill=\'%23ffc0cb\'/%3E%3Cpath d=\'M0,100 C200,150 400,50 600,100 C800,150 1000,50 1200,100 L1200,600 L0,600 Z\' fill=\'%23ffd1dc\'/%3E%3Cpath d=\'M0,200 C200,250 400,150 600,200 C800,250 1000,150 1200,200 L1200,600 L0,600 Z\' fill=\'%23ffb6c1\' opacity=\'0.6\'/%3E%3Cpath d=\'M0,300 C200,350 400,250 600,300 C800,350 1000,250 1200,300 L1200,600 L0,600 Z\' fill=\'%23ffc0cb\' opacity=\'0.4\'/%3E%3C/svg%3E');">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-content">
+                        <h1 class="text-4xl md:text-6xl font-bold mb-4">Luxurious Facial Treatments</h1>
+                        <p class="text-xl md:text-2xl mb-8">Rejuvenate your skin with our premium facial services</p>
+                        <div class="flex justify-center gap-4">
+                            <a href="#contact"
+                                class="btn-primary px-6 py-3 rounded-full text-white font-medium hover:shadow-lg">Book
+                                Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <div class="carousel-control carousel-control-prev" id="carousel-prev">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </div>
+            <div class="carousel-control carousel-control-next" id="carousel-next">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </div>
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <div class="carousel-indicator active" data-slide="0"></div>
+                <div class="carousel-indicator" data-slide="1"></div>
+                <div class="carousel-indicator" data-slide="2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-[#ff85a2]">Our Beauty Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover our range of professional beauty services designed
+                    to enhance your natural features and leave you feeling confident and beautiful.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1: Threading -->
+                <a href="#threading-section">
+                    <div class="service-card bg-[#fff5f7] p-6 rounded-lg transition duration-300 text-center">
+                        <div class="mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-[#ff85a2]"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 12c0-5.5 5.5-10 12-10s6 6 6 10s-1 8-6 8s-12-2.5-12-8z"></path>
+                                <path d="M9 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                <path d="M21 12c-.5-4.5-4-7-9-7s-8.5 2.5-9 7"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-[#ff85a2]">Threading</h3>
+                        <p class="text-gray-600 mb-4">Precise hair removal using the ancient threading technique for
+                            clean, defined brows and facial hair removal.</p>
+                        <span class="price-tag">From $8</span>
+                    </div>
+                </a>
+
+                <!-- Service 2: Waxing -->
+                <a href="#waxing-section">
+                    <div class="service-card bg-[#fff5f7] p-6 rounded-lg transition duration-300 text-center">
+                        <div class="mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-[#ff85a2]"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 12c0-6 6-9 6-9s6 3 6 9s-3 6-6 6s-6-3-6-6z"></path>
+                                <path d="M12 3v18"></path>
+                                <path d="M6 9h12"></path>
+                                <path d="M6 15h12"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-[#ff85a2]">Waxing</h3>
+                        <p class="text-gray-600 mb-4">Full body waxing services using premium quality wax for smooth,
+                            long-lasting results.</p>
+                        <span class="price-tag">From $6</span>
+                    </div>
+                </a>
+
+                <!-- Service 3: Facial Treatments -->
+                <a href="#facial-section">
+                    <div class="service-card bg-[#fff5f7] p-6 rounded-lg transition duration-300 text-center">
+                        <div class="mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-[#ff85a2]"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 3c.5 0 1 .5 1 1c0 1-1 2-2 3s-1 2-1 3c0-1-1-2-2-3s-1-2-1-3c0-.5 .5-1 1-1">
+                                </path>
+                                <path d="M7 9c-.5 0-1 .5-1 1c0 1 1 2 2 3s1 2 1 3c0-1 1-2 2-3s1-2 1-3c0-.5-.5-1-1-1">
+                                </path>
+                                <path d="M17 9c-.5 0-1 .5-1 1c0 1 1 2 2 3s1 2 1 3c0-1 1-2 2-3s1-2 1-3c0-.5-.5-1-1-1">
+                                </path>
+                                <path d="M12 20c-1 0-1.5-.5-1.5-1c0-.5 .5-1 1.5-1s1.5 .5 1.5 1c0 .5-.5 1-1.5 1z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-[#ff85a2]">Facial Treatments</h3>
+                        <p class="text-gray-600 mb-4">Rejuvenating facials customized to your skin type to cleanse,
+                            exfoliate, and nourish your skin.</p>
+                        <span class="price-tag">From $50</span>
+                    </div>
+                </a>
+
+                <!-- Service 4: Eyelash Extensions -->
+                <a href="#eyelashes-section">
+                    <div class="service-card bg-[#fff5f7] p-6 rounded-lg transition duration-300 text-center">
+                        <div class="mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-[#ff85a2]"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M12 5c-1.5 0-2.5 1-2.5 2c0 1.5 2 3 2.5 4.5c.5-1.5 2.5-3 2.5-4.5c0-1-1-2-2.5-2z">
+                                </path>
+                                <path d="M8.5 9c-1 0-1.5 .5-1.5 1c0 .5 .5 1 1 1.5c.5-.5 1-1 1-1.5c0-.5-.5-1-1-1z">
+                                </path>
+                                <path d="M15.5 9c-1 0-1.5 .5-1.5 1c0 .5 .5 1 1 1.5c.5-.5 1-1 1-1.5c0-.5-.5-1-1-1z">
+                                </path>
+                                <path d="M12 16c-3 0-4.5-3-4.5-3l-1 5c0 3 2 5 5.5 5s5.5-2 5.5-5l-1-5c0 0-1.5 3-4.5 3z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-[#ff85a2]">Eyelash Extensions</h3>
+                        <p class="text-gray-600 mb-4">Beautiful, natural-looking eyelash extensions to enhance your eyes
+                            and eliminate the need for mascara.</p>
+                        <span class="price-tag">From $45</span>
+                    </div>
+                </a>
+
+                <!-- Service 5: Tinting -->
+                <a href="#tinting-section">
+                    <div class="service-card bg-[#fff5f7] p-6 rounded-lg transition duration-300 text-center">
+                        <div class="mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-[#ff85a2]"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 12c0-4 4-8 8-8s8 4 8 8"></path>
+                                <path d="M8 12c0-2 2-4 4-4s4 2 4 4"></path>
+                                <path d="M12 18c-1 0-4-1-4-4s3-4 4-4s4 1 4 4s-3 4-4 4z"></path>
+                                <path d="M12 12v6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-[#ff85a2]">Tinting</h3>
+                        <p class="text-gray-600 mb-4">Semi-permanent color applied to enhance and define your brows and
+                            lashes for a more dramatic look.</p>
+                        <span class="price-tag">From $25</span>
+                    </div>
+                </a>
+
+                <!-- Service 6: Specialty Services -->
+                <a href="#speicality-section">
+                    <div
+                        class="service-card bg-[#fff5f7] p-6 rounded-lg transition duration-300 text-center block hover:shadow-lg focus:outline-none">
+                        <div class="mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-[#ff85a2]"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="9"></circle>
+                                <path d="M8 14s1.5 2 4 2s4-2 4-2"></path>
+                                <path d="M9 9h.01"></path>
+                                <path d="M15 9h.01"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-[#ff85a2]">Specialty Services</h3>
+                        <p class="text-gray-600 mb-4">Lash lifts, eyebrow lamination, and henna tattoos to complete your
+                            beauty transformation.</p>
+                        <span class="price-tag">From $20</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-[#fff5f7]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-[#ff85a2]">Pricing</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mb-8">Transparent pricing for all our beauty services. Book
+                    your appointment today and experience the difference.</p>
+
+                <!-- Quick Jump Menu -->
+                <div class="flex flex-wrap justify-center gap-3 mb-8">
+                    <a href="#threading-section"
+                        class="bg-[#ff85a2] text-white px-4 py-2 rounded-full hover:bg-[#ff6b8b] transition duration-300">Threading</a>
+                    <a href="#waxing-section"
+                        class="bg-[#ff85a2] text-white px-4 py-2 rounded-full hover:bg-[#ff6b8b] transition duration-300">Waxing</a>
+                    <a href="#facial-section"
+                        class="bg-[#ff85a2] text-white px-4 py-2 rounded-full hover:bg-[#ff6b8b] transition duration-300">Facial</a>
+                    <a href="#eyelashes-section"
+                        class="bg-[#ff85a2] text-white px-4 py-2 rounded-full hover:bg-[#ff6b8b] transition duration-300">Eyelashes</a>
+                    <a href="#tinting-section"
+                        class="bg-[#ff85a2] text-white px-4 py-2 rounded-full hover:bg-[#ff6b8b] transition duration-300">Tinting</a>
+                    <a href="#speicality-section"
+                        class="bg-[#ff85a2] text-white px-4 py-2 rounded-full hover:bg-[#ff6b8b] transition duration-300">Speciality
+                        Services</a>
+                </div>
+            </div>
+
+            <div class="price-list-container">
+                <!-- Threading Price List -->
+                <div class="price-list" id="threading-section">
+                    <div class="price-list-header">
+                        Threading Services
+                    </div>
+                    <div class="price-list-body">
+                        <div class="service-item">
+                            <span class="service-name">Eyebrows</span>
+                            <span class="service-price">$12</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Upper Lips</span>
+                            <span class="service-price">$8</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Lower Lips</span>
+                            <span class="service-price">$5</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Chin</span>
+                            <span class="service-price">$12 &amp; Up</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Forehead</span>
+                            <span class="service-price">$10</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Sideburns</span>
+                            <span class="service-price">$14</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Neck</span>
+                            <span class="service-price">$12</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Full Face</span>
+                            <span class="service-price">$50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Facial Waxing Price List -->
+                <div class="price-list" id="waxing-section">
+                    <div class="price-list-header">
+                        Facial Waxing
+                    </div>
+                    <div class="price-list-body">
+                        <div class="service-item">
+                            <span class="service-name">Eyebrows</span>
+                            <span class="service-price">$14</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Upper Lips</span>
+                            <span class="service-price">$8</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Lower Lips</span>
+                            <span class="service-price">$6</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Chin</span>
+                            <span class="service-price">$12 &amp; Up</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Forehead</span>
+                            <span class="service-price">$10</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Sideburns</span>
+                            <span class="service-price">$16</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Neck</span>
+                            <span class="service-price">$14</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Nose</span>
+                            <span class="service-price">$15</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Ears</span>
+                            <span class="service-price">$15</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Full Face</span>
+                            <span class="service-price">$50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Body Waxing Price List -->
+                <div class="price-list">
+                    <div class="price-list-header">
+                        Body Waxing
+                    </div>
+                    <div class="price-list-body">
+                        <div class="service-item">
+                            <span class="service-name">Full Arms</span>
+                            <span class="service-price">$40</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Half Arms</span>
+                            <span class="service-price">$25</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Full Legs</span>
+                            <span class="service-price">$60</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Half Legs</span>
+                            <span class="service-price">$35</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Under Arms</span>
+                            <span class="service-price">$22</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Full Belly</span>
+                            <span class="service-price">$40</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Bikini</span>
+                            <span class="service-price">$40</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Brazilian</span>
+                            <span class="service-price">$60</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Butt Crack</span>
+                            <span class="service-price">$25</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Lower Back</span>
+                            <span class="service-price">$40</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Back and Chest</span>
+                            <span class="service-price">$60</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Full Body</span>
+                            <span class="service-price">$200</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Facial Treatments Price List -->
+                <div class="price-list" id="facial-section">
+                    <div class="price-list-header">
+                        Facial Treatments
+                    </div>
+                    <div class="price-list-body">
+                        <div class="service-item">
+                            <span class="service-name">Teen Facial</span>
+                            <span class="service-price">$50</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Gold Facial</span>
+                            <span class="service-price">$95</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Hydrating Facial</span>
+                            <span class="service-price">$80</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Anti-Aging Facial</span>
+                            <span class="service-price">$95</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eyelash Extensions Price List -->
+                <div class="price-list" id="eyelashes-section">
+                    <div class="price-list-header">
+                        Eyelash Extensions
+                    </div>
+                    <div class="price-list-body">
+                        <div class="service-item">
+                            <span class="service-name">Eyelash Cluster Natural</span>
+                            <span class="service-price">$45</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Eyelash Cluster Fuller Look</span>
+                            <span class="service-price">$50</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Lash Fill in</span>
+                            <span class="service-price">$20 &amp; Up</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Lash Removal</span>
+                            <span class="service-price">$15</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Individual Eyelash Extensions Natural</span>
+                            <span class="service-price">$110</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Individual Eyelash Extensions Hybrid</span>
+                            <span class="service-price">$150</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Individual Lash Fill in (2 Weeks)</span>
+                            <span class="service-price">$80</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Individual Lash Fill in (3 Weeks)</span>
+                            <span class="service-price">$90</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Individual Lash Removal (Hard Glue)</span>
+                            <span class="service-price">$35</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tinting Price List -->
+                <div class="price-list" id="tinting-section">
+                    <div class="price-list-header">
+                        Tinting
+                    </div>
+                    <div class="price-list-body">
+                        <div class="service-item">
+                            <span class="service-name">Eyebrows</span>
+                            <span class="service-price">$25</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Eyelashes</span>
+                            <span class="service-price">$30</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Combos</span>
+                            <span class="service-price">$50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speciality Services Price List -->
+                <div class="price-list" id="speicality-section">
+                    <div class="price-list-header">
+                        Specialty Services
+                    </div>
+                    <div class="price-list-body">
+                        <div class="service-item">
+                            <span class="service-name">Lash Lift</span>
+                            <span class="service-price">$65</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Lash Lift with Tint</span>
+                            <span class="service-price">$85</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Eyebrows Lamination</span>
+                            <span class="service-price">$65</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Eyebrows Lamination with Tint</span>
+                            <span class="service-price">$85</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Henna Tattoo (Brown)</span>
+                            <span class="service-price">$20 &amp; up</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Henna Tattoo (Black)</span>
+                            <span class="service-price">$20 &amp; up</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="#contact"
+                    class="btn-primary px-8 py-3 rounded-full text-white font-medium hover:shadow-lg">Book Your
+                    Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-[#ff85a2]">Customer Reviews</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">See what our clients have to say about their experience at
+                    Perfect Eyebrows.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="testimonial-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-[#ffd1dc] flex items-center justify-center text-xl font-bold text-[#ff85a2]">
+                            S</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <div class="flex text-yellow-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"I've been coming here for my eyebrow threading for over a year now. The
+                        staff is incredibly skilled and always gives me the perfect shape. Wouldn't go anywhere else!"
+                    </p>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="testimonial-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-[#ffd1dc] flex items-center justify-center text-xl font-bold text-[#ff85a2]">
+                            M</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Michael Chen</h4>
+                            <div class="flex text-yellow-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Had my first facial here last month and it was amazing! My skin felt so
+                        refreshed and the esthetician was very knowledgeable about skincare. Already booked my next
+                        appointment."</p>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="testimonial-card p-6">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-[#ffd1dc] flex items-center justify-center text-xl font-bold text-[#ff85a2]">
+                            A</div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Aisha Patel</h4>
+                            <div class="flex text-yellow-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The lash lift and tint I got here was absolutely perfect! It opened up my
+                        eyes so much and lasted for weeks. The salon is clean, relaxing, and the staff is very
+                        professional."</p>
+                </div>
+            </div>
+
+            <!-- More Reviews Button -->
+            <div class="text-center mt-10">
+                <button id="more-reviews"
+                    class="btn-primary px-6 py-3 rounded-full text-white font-medium hover:shadow-lg">Read More
+                    Reviews</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-[#fff5f7]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-[#ff85a2]">Contact Us</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Have questions or ready to book your appointment? Reach out
+                    to us today.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Contact Information -->
+                <div>
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <h3 class="text-2xl font-bold mb-6 text-[#ff85a2]">Get In Touch</h3>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-[#ffd1dc] p-3 rounded-full text-[#ff85a2] mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                        </path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Address</h4>
+                                    <p class="text-gray-600">123 Beauty Lane, Suite 101<br>New York, NY 10001</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-[#ffd1dc] p-3 rounded-full text-[#ff85a2] mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Phone</h4>
+                                    <p class="text-gray-600">(555) 123-4567</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-[#ffd1dc] p-3 rounded-full text-[#ff85a2] mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Email</h4>
+                                    <p class="text-gray-600">info@perfectbrowsworld.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-[#ffd1dc] p-3 rounded-full text-[#ff85a2] mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Hours</h4>
+                                    <p class="text-gray-600">
+                                        Monday - Friday: 9am - 7pm<br>
+                                        Saturday: 10am - 6pm<br>
+                                        Sunday: Closed
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <h4 class="font-semibold mb-3">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#"
+                                    class="bg-[#ffd1dc] p-3 rounded-full text-[#ff85a2] hover:bg-[#ff85a2] hover:text-white transition duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a href="#"
+                                    class="bg-[#ffd1dc] p-3 rounded-full text-[#ff85a2] hover:bg-[#ff85a2] hover:text-white transition duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a href="#"
+                                    class="bg-[#ffd1dc] p-3 rounded-full text-[#ff85a2] hover:bg-[#ff85a2] hover:text-white transition duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="
+                                            window.__cf$cv$params="{r:'94bed886b1aa1fee',t:'MTc0OTI4NTYzOC4wMDAwMDA='};var"
+                                            a="document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);&quot;;b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var"
+                                            if(window.addeventlistener)document.addeventlistener('domcontentloaded',c);else{var=""
+                                            e="document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&amp;&amp;(document.onreadystatechange=e,c())}}}})();</script">
+                                        </path>
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
