@@ -1,323 +1,362 @@
 /* Base Styles */
 :root {
-  --primary: #d6336c;       /* Darker pink for better contrast */
-  --primary-light: #e64980; /* Lighter variant */
-  --primary-lighter: #f783ac; /* For non-text elements */
-  --primary-lightest: #fff0f6; /* Very light pink background */
-  --secondary: #5f3dc4;    /* Complementary purple */
-  --text-dark: #2b2b2b;    /* Darker text for better contrast */
-  --text-medium: #495057;
-  --text-light: #f8f9fa;
-  --accent: #ff922b;       /* Orange accent */
-  --border-light: #ffe3e3;
+    --primary: #d6336c;
+    /* Darker pink for better contrast */
+    --primary-light: #e64980;
+    /* Lighter variant */
+    --primary-lighter: #f783ac;
+    /* For non-text elements */
+    --primary-lightest: #fff0f6;
+    /* Very light pink background */
+    --secondary: #5f3dc4;
+    /* Complementary purple */
+    --text-dark: #2b2b2b;
+    /* Darker text for better contrast */
+    --text-medium: #495057;
+    --text-light: #f8f9fa;
+    --accent: #ff922b;
+    /* Orange accent */
+    --border-light: #ffe3e3;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  color: var(--text-dark);
-  background-color: var(--primary-lightest);
-  line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--primary-lightest);
+    line-height: 1.6;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Playfair Display', serif;
-  color: var(--text-dark);
-  line-height: 1.3;
+.site-title {
+    color: var(--primary);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Playfair Display', serif;
+    color: var(--text-dark);
+    line-height: 1.3;
 }
 
 /* Navigation */
 .nav-link {
-  position: relative;
-  color: var(--text-dark);
+    position: relative;
+    color: var(--text-dark);
 }
 
 .nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -2px;
-  left: 0;
-  background-color: var(--primary);
-  transition: width 0.3s ease;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--primary);
+    transition: width 0.3s ease;
 }
 
 .nav-link:hover::after {
-  width: 100%;
+    width: 100%;
 }
-
+.nav svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: var(--text-dark);
+}
 /* Buttons */
 .btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  text-align: center;
-  transition: all 0.3s ease;
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
 .btn-primary {
-  background-color: var(--primary);
-  color: white;
+    background-color: var(--primary);
+    color: white;
 }
 
 .btn-primary:hover {
-  background-color: #c2255c;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(214, 51, 108, 0.3);
+    background-color: #c2255c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(214, 51, 108, 0.3);
 }
 
 /* Cards */
 .service-card {
-  background-color: white;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-  overflow: hidden;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    overflow: hidden;
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 /* Price Tags */
 .price-tag {
-  background-color: var(--primary);
-  color: white;
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  font-weight: 500;
-  display: inline-block;
+    background-color: var(--primary);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-weight: 500;
+    display: inline-block;
 }
 
 /* Scroll to Top */
 .scroll-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: var(--primary);
-  color: white;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 100;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 100;
 }
 
 .scroll-top.visible {
-  opacity: 1;
+    opacity: 1;
 }
 
 /* Carousel Styles */
 .carousel {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 40vh;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 40vh;
+}
+
+@media (min-width: 768px) {
+    .carousel {
+        height: 60vh;
+    }
 }
 
 .carousel-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .carousel-slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 1s ease;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .carousel-slide.active {
-  opacity: 1;
-  z-index: 2;
+    opacity: 1;
+    z-index: 2;
 }
 
 .carousel-content {
-  text-align: center;
-  color: white;
-  padding: 20px;
-  max-width: 800px;
-  width: 100%;
-  z-index: 10;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .carousel-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .carousel-indicators {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-  z-index: 20;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 20;
 }
 
 .carousel-indicator {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .carousel-indicator.active {
-  background-color: white;
+    background-color: white;
 }
 
+/* Carousel Controls */
 .carousel-control {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background-color: rgba(214, 51, 108, 0.7);
-  border-radius: 50%;
+  background: rgba(255,255,255,0.7);
+  border-radius: 9999px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 24px;
   cursor: pointer;
-  z-index: 20;
-  transition: background-color 0.3s ease;
+  z-index: 10;
+  transition: background 0.2s;
 }
 
 .carousel-control:hover {
-  background-color: rgba(214, 51, 108, 0.9);
+  background: rgba(255,133,162,0.9); /* match your accent color */
 }
 
+.carousel-control-prev {
+  left: 16px;
+}
+
+.carousel-control-next {
+  right: 16px;
+}
+.text-lightest{
+    color: var(--text-lightest);
+}
 /* Service Menu */
 .service-category {
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .service-category h3 {
-  color: var(--primary);
-  border-bottom: 2px solid var(--border-light);
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-  position: sticky;
-  top: 0;
-  background-color: white;
-  z-index: 10;
+    color: var(--primary);
+    border-bottom: 2px solid var(--border-light);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
 }
 
 .service-item {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem 0;
-  border-bottom: 1px dotted var(--border-light);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px dotted var(--border-light);
 }
 
 .service-item:last-child {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 .service-name {
-  flex-grow: 1;
+    flex-grow: 1;
 }
 
 .service-price {
-  font-weight: 600;
-  color: var(--primary);
+    font-weight: 600;
+    color: var(--primary);
 }
 
 /* Price List */
 .price-list-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
 .price-list {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
 }
 
 .price-list-header {
-  background-color: var(--primary);
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  font-weight: 600;
-  font-size: 1.25rem;
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.25rem;
 }
 
 .price-list-body {
-  padding: 1rem;
+    padding: 1rem;
 }
 
 /* Tabs */
 .tab-container {
-  border-radius: 0.5rem;
-  overflow: hidden;
-  margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
 }
 
 .tab-buttons {
-  display: flex;
-  background-color: var(--border-light);
-  flex-wrap: wrap;
+    display: flex;
+    background-color: var(--border-light);
+    flex-wrap: wrap;
 }
 
 .tab-button {
-  padding: 1rem;
-  flex-grow: 1;
-  text-align: center;
-  cursor: pointer;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  min-width: 120px;
-  color: var(--text-medium);
+    padding: 1rem;
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    min-width: 120px;
+    color: var(--text-medium);
 }
 
 .tab-button.active {
-  background-color: var(--primary);
-  color: white;
+    background-color: var(--primary);
+    color: white;
 }
 
 .tab-content {
-  display: none;
-  padding: 1.5rem;
-  background-color: white;
+    display: none;
+    padding: 1.5rem;
+    background-color: white;
 }
 
 .tab-content.active {
-  display: block;
+    display: block;
 }
 
 /* Accessibility Improvements */
@@ -326,54 +365,56 @@ button:focus,
 input:focus,
 textarea:focus,
 select:focus {
-  outline: 3px solid var(--accent);
-  outline-offset: 2px;
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
 }
 
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-  .carousel {
-    height: 50vh;
-  }
-  
-  .price-list-container {
-    grid-template-columns: 1fr;
-  }
-  
-  .tab-buttons {
-    flex-direction: column;
-  }
+    .carousel {
+        height: 50vh;
+    }
+
+    .price-list-container {
+        grid-template-columns: 1fr;
+    }
+
+    .tab-buttons {
+        flex-direction: column;
+    }
 }
 
 /* Utility Classes */
 .text-primary {
-  color: var(--primary);
+    color: var(--primary);
 }
-
+.text-lightest{
+    color: var(--text-lightest);
+}
 .bg-primary {
-  background-color: var(--primary);
+    background-color: var(--primary);
 }
 
 .text-center {
-  text-align: center;
+    text-align: center;
 }
 
 .shadow-md {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
 }
 
 .transition {
-  transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
