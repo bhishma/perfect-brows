@@ -97,8 +97,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const openHours = businessHours[today];
 
     // SVGs as strings
-    const openSVG = `<img src="static/open.svg" alt="Open" style="display:inline;width:1.2em;height:1.2em;vertical-align:middle;margin-right:0.4em;">`;
-    const closedSVG = `<img src="static/closed.svg" alt="Closed" style="display:inline;width:1.2em;height:1.2em;vertical-align:middle;margin-right:0.4em;">`;
+    const openSVG = `<img src="static/open.svg" alt="Open" style="display:inline;width:1.5em;height:1.5em;vertical-align:middle;margin-right:0.4em;">`;
+    const closedSVG = `<img src="static/closed.svg" alt="Closed" style="display:inline;width:1.5em;height:1.5em;vertical-align:middle;margin-right:0.4em;">`;
 
     if (!openHours) {
       // Find next open day
