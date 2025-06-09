@@ -143,15 +143,8 @@ h4 {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 30vh;
+    height: 40vh;
 }
-
-@media (min-width: 768px) {
-    .carousel {
-        height: 40vh;
-    }
-}
-
 .carousel-inner {
     position: relative;
     width: 100%;
@@ -385,7 +378,7 @@ select:focus {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .carousel {
-        height: 50vh;
+        height: 40vh;
     }
 
     .price-list-container {
